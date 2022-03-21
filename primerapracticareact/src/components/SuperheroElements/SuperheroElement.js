@@ -1,20 +1,19 @@
 import React from "react";
+import "./SuperheroElement.css"
 
 function SuperheroElement(props){
     return(
-        props.SuperheroInfo.map( (superhero, idx) => 
-        <div key={superhero + idx} className="character-card">
-            <img src={superhero.imageSrc} alt="superhero" />
+        <div className="character-card">
+            <img src={`/images/superHeroImages/${props.superheroInfo.imageSrc}`} alt="superhero" />
 
-            <h4>{superhero.name}</h4>
+            <h4>{props.superheroInfo.name}</h4>
 
-            <p>{superhero.description}</p>
+            <p>{props.superheroInfo.description}</p>
 
             <a href="/">Ver más</a>
 
         </div>
         )
-    )
 }
 
 export default SuperheroElement;

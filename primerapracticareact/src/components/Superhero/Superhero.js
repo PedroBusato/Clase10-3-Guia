@@ -1,63 +1,55 @@
 import React from "react";
 import SuperheroElement from "../SuperheroElements/SuperheroElement";
-import Ahsoka from "../superheroImages/ahsoka.jpg";
-import Anakin from "../superheroImages/anakin.jpg";
-import Batman from "../superheroImages/batman.jpg";
-import Hulk from "../superheroImages/hulkSmall.jpg";
-import KyloRen from "../superheroImages/kyloRen.jpg";
-import Luke from "../superheroImages/luke.jpg"
-import ObiWan from "../superheroImages/obiWan.jpg"
-import DrStrange from "../superheroImages/strange.jpg"
+import "./Superhero.css"
 
 function Superhero(){
     let SuperheroInfo = [
         {
             name: "Ahsoka Tano",
             description: "Personaje de Star Wars",
-            imageSrc: Ahsoka
+            imageSrc: "ahsoka.jpg"
         },
         {
             name: "Anakin Skywalker",
             description: "Personaje de Star Wars",
-            imageSrc: Anakin
+            imageSrc: "anakin.jpg"
         },
         {
             name: "Batman",
             description: "Personaje de DC Comics",
-            imageSrc: Batman 
+            imageSrc: "batman.jpg" 
         },
         {
             name: "Hulk",
             description: "Personaje de Marvel",
-            imageSrc: Hulk
+            imageSrc: "hulkSmall.jpg"
         },
         {
             name: "Kylo Ren",
             description: "Personaje de Star Wars",
-            imageSrc: KyloRen
+            imageSrc: "kyloRen.jpg"
         },
         {
             name: "Luke Skywalker",
             description: "Personaje de Star Wars",
-            imageSrc: Luke 
+            imageSrc: "luke.jpg"
         },
         {
             name: "Obi Wan Kenobi",
             description: "Personaje de Star Wars",
-            imageSrc: ObiWan
+            imageSrc: "obiWan.jpg"
         },
         {
             name: "Dr. Strange",
             description: "Personaje de Marvel",
-            imageSrc: DrStrange
+            imageSrc: "strange.jpg"
         }
     ]
     return(
-        <div className="superHero-container">
-            <SuperheroElement SuperheroInfo={SuperheroInfo}/>
-        </div>
+        SuperheroInfo.map( (oneSuperhero, idx) =>
+            <SuperheroElement key={oneSuperhero + idx} superheroInfo={oneSuperhero}/>    
+        )
     )
 }
-
 
 export default Superhero;

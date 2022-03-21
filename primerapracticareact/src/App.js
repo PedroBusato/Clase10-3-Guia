@@ -23,7 +23,9 @@ function App() {
               <Categories/>
             </div>
           </div>
-          <Superhero/>
+          <div className="superHero-container">
+            <Superhero/>
+          </div>
         </div>
         <Footer/>
       </div>

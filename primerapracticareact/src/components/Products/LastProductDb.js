@@ -10,7 +10,7 @@ function LastProductoDb(props){
             <div class="card shadow mb-4">
                 <LastProductHeader LastProductHeader="Last product in Data Dase"/>
                 <div class="card-body">
-                    <LastProductImage imageSource="/public/images/product_dummy.svg"/> {/* ESTOY TENIENDO PROBLEMAS CON LA RUTA DE LA IMAGEN */}
+                    <LastProductImage imageSource="product_dummy.svg"/> {/* ESTOY TENIENDO PROBLEMAS CON LA RUTA DE LA IMAGEN */}
                     <LastProductDescription productDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?"/>
                     <LastProductButton buttonDescription="View product detail"/>
                 </div>
